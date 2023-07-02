@@ -1,0 +1,323 @@
+/* Resetting margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #f2f2f2;
+}
+header .logo {
+  margin-right: auto;
+  /* Pushes the logo to the left */
+  transition: all 0.3s ease-in-out;
+  /* Add the animation */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #f2f2f2;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 10px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #f2f2f2;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 1100px) {
+  nav ul li a {
+    display: none;
+  }
+}
+section.main img {
+  width: 100%;
+  height: 100%;
+}
+section.main h2 {
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+}
+
+.text {
+  width: 70%;
+  height: auto;
+  margin: 20px auto;
+}
+
+section.main p {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}
+
+/* Media queries for responsive design  for main text section*/
+@media (max-width: 700px) {
+  .text {
+    width: 90%;
+    height: auto;
+    margin: 20px auto 0;
+  }
+  section.main p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 300px) {
+  .text {
+    width: 97%;
+  }
+}
+/* Styling for the image container */
+.image-container {
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  flex-wrap: wrap;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  max-width: 420px;
+  display: block;
+}
+
+/* Media queries for hiding images based on screen size */
+/* Media query for screen size less than or equal to 1400px */
+@media (max-width: 1400px) {
+  .image-container {
+    justify-content: center;
+    /* Center horizontally */
+  }
+  .image-container img:nth-child(n+4) {
+    display: none;
+  }
+}
+/* Media query for screen size less than or equal to 1280px */
+@media (max-width: 1280px) {
+  .image-container img:nth-child(n+3) {
+    display: none;
+  }
+}
+/* Media query for screen size less than or equal to 843px */
+@media (max-width: 843px) {
+  .image-container img:nth-child(n+2) {
+    display: none;
+  }
+}
+/* Styling for the "nofi" section */
+section.nofi {
+  margin-top: 300px;
+  width: 70%;
+  margin: 20px auto;
+}
+section.nofi h2 {
+  background-color: #abfcfc;
+  margin-left: 20px;
+  font-size: 20px;
+  padding: 20px;
+}
+section.nofi p {
+  margin-left: 20px;
+  font-size: 20px;
+  padding: 20px;
+  border: solid 2px rgb(182, 32, 182);
+  border-style: solid;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+@media (max-width: 700px) {
+  section.nofi {
+    width: 100%;
+  }
+}
+/* Styling for the "menu" section */
+.menu {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.menu h2 {
+  margin-left: 20px;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 400px;
+  margin: 10px;
+  border: solid 2px purple;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.menu-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.menu-item h3 {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.menu-item p {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+@media (max-width: 788px) {
+  .menu-list {
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .menu-item {
+    width: calc(47% - 20px);
+  }
+}
+@media (max-width: 600px) {
+  .menu-list {
+    justify-content: center;
+  }
+  .menu-item {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 300) {
+  .menu {
+    width: 100%;
+  }
+}
+/* Styling for the "reservation" section */
+section.reservation {
+  background-color: #b7f7f7;
+  width: 70%;
+  height: auto;
+  border: solid 2px purple;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+section.reservation h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem;
+}
+section.reservation p {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+section.contact {
+  width: 70%;
+  height: auto;
+  border: solid 2px purple;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+section.contact p {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 425) {
+  .section.reservation {
+    width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  section.reservation {
+    width: 97%;
+  }
+}
+/* Styling for the "contact" section */
+@media only screen and (max-width: 425) {
+  .section.contact {
+    width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  section.contact {
+    width: 97%;
+  }
+}
+/* Styling for the footer section */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: #f2f2f2;
+}
+footer p {
+  margin: 0;
+}
+
+/* Styling for the media link  section */
+.social-media-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.social-media-link a img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Styling for the media link icon*//*# sourceMappingURL=style.css.map */
