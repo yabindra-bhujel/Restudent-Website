@@ -1,5 +1,7 @@
 /* Resetting margin and padding for all elements */
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +15,6 @@
     align-items: center;
     height: 100px;
     background-color: #f2f2f2;
-  
     .logo {
       margin-right: auto;
   
@@ -63,6 +64,11 @@
   
   @media (max-width: 1100px) {
     nav ul li a {
+      display: none;
+    }
+  }
+  @media (max-width: 500px) {
+    header {
       display: none;
     }
   }
@@ -224,7 +230,7 @@
     display: flex;
     flex-direction: column;
     width: 350px;
-    height: 400px;
+    height: 420px;
     margin: 10px;
     border: solid 2px purple;
     border-radius: 5px;
@@ -241,14 +247,23 @@
       padding-top: 10px;
       padding-left: 10px;
       font-size: 20px;
+      font-weight: bold;
     }
   
     p {
       font-size: 20px;
-      padding: 10px;
       border-radius: 5px;
       margin: 10px;
     }
+    
+  }
+  strong{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
   }
 
 //   media quries for menu section
@@ -284,6 +299,7 @@
 
 section {
     &.reservation {
+      margin-top: 100px;
       background-color: #b7f7f7;
       width: 70%;
       height: auto;
@@ -305,7 +321,10 @@ section {
         font-size: 1.5rem;
         padding: 1rem;
       }
+     
+      
     }
+
   
     &.contact {
       width: 70%;
@@ -322,6 +341,7 @@ section {
         padding: 20px;
       }
     }
+    
   }
   
   @media only screen and (max-width: 425) {
@@ -349,6 +369,32 @@ section {
       width: 97%;
     }
   }
+
+  .other{
+    width: 70%;
+      height: auto;
+      border: solid 2px purple;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      margin-bottom: 100px;
+
+      p{
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+        color: red;
+        font-weight:bold;
+      }
+      
+
+  }
+  .map h1{
+    font-weight: bold;
+    font-size: 30px;
+    padding: 20px;
+
+  }
   
   /* Styling for the footer section */
   
@@ -365,6 +411,7 @@ section {
     }
   }
   
+ 
   /* Styling for the media link  section */
   
   .social-media-link {
